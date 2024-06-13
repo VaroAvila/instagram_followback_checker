@@ -29,6 +29,7 @@ I have seen over-engineered solutions to get the list of people not following yo
 5. Do the same with the path where you want to export the .txt file with the results. 
 
     e.g:
+   
           followers_file = os.path.join('C:\\Users\\User\\Desktop\\connections\\followers_and_following', 'followers_1.json') # followers file
 
           following_file = os.path.join('C:\\Users\\User\\Desktop\\connections\\followers_and_following', 'following.json')   # following file
