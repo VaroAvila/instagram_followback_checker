@@ -10,6 +10,7 @@ I have seen over-engineered solutions to get the list of people not following yo
 2. Go to your profile and click on the settings icon.
 3. Select "Privacy and Security".
 4. Scroll down to "Data Download" and click "Request Download". (To simplify the process you can choose to download only your connections/follower/ing information data)
+   Alternatively you can go directly to this link https://www.instagram.com/download/request/
 5. Choose the format (JSON) and click "Next".
 6. Make sure to select the right range of time for the downloaded data (e.g.: {since the creation of the account - today})
 7. Enter your password and click "Request Download".
@@ -21,14 +22,15 @@ I have seen over-engineered solutions to get the list of people not following yo
 2. Find the path to the `followers_1.json` and `following.json` files.
 
 ### Step 3: Set Up the Python Script
-1. Ensure you have Python and Git installed on your computer.
-2. Create a new directory for the project.
-3. Inside this directory, clone this repository with "git clone https://github.com/VaroAvila/instagram_followback_checker.git"
-4. Open the "compare_followers.py" script with a text editor
-5. Replace "path_to_your_directory" with the right paths to the followers and following files. Make sure the name of the file is correct too.
-6. Do the same with the path where you want to export the .txt file with the results. 
+1. Create a new directory for the project.
+2. Inside this directory, clone this repository with "git clone https://github.com/VaroAvila/instagram_followback_checker.git"
+3. Open the "compare_followers.py" script with a text editor
+4. Replace "path_to_your_directory" with the right paths to the followers and following files. Make sure the name of the file is correct too.
+5. Do the same with the path where you want to export the .txt file with the results. 
 
-    e.g:  followers_file = os.path.join('C:\\Users\\User\\Desktop\\connections\\followers_and_following', 'followers_1.json') # followers file
+    e.g:
+          followers_file = os.path.join('C:\\Users\\User\\Desktop\\connections\\followers_and_following', 'followers_1.json') # followers file
+
           following_file = os.path.join('C:\\Users\\User\\Desktop\\connections\\followers_and_following', 'following.json')   # following file
 
           output_file = os.path.join('C:\\Users\\User\\Desktop', 'not_following_back.txt')   # output .txt file
@@ -41,5 +43,5 @@ I have seen over-engineered solutions to get the list of people not following yo
 
 ### Step 5: Output
 
-   The program will output the list of all the accounts you are following that are not following you back. It will also export it to a .txt file with this information in the path you provided on step 3. 
+   The program will output the list of all the accounts you are following that are not following you back. It will also export it to a .txt file in the path you provided on step 3. 
 
